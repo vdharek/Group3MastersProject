@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uiclasses.WelcomePage">
+    <!-- TODO: Update blank fragment layout -->
+
+<!--
+    Nisha
+-->
+    <TextView
+        android:id="@+id/statusLabl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#e9ab90"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Disconnected"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="64dp"
+        android:minWidth="88dp"
+        android:minHeight="36dp"
+        android:onClick="connect"
+        android:text="Connect"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/ipAddress"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/poi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:minWidth="88dp"
+        android:minHeight="36dp"
+        android:onClick="POI2"
+        android:text="Mary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/poi1"
+        app:layout_constraintTop_toBottomOf="@+id/poi1" />
+
+    <Button
+        android:id="@+id/vol50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="15dp"
+        android:minWidth="88dp"
+        android:minHeight="36dp"
+        android:onClick="vol50"
+        android:text="50%"
+        app:layout_constraintStart_toEndOf="@+id/mute"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/vol70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:minWidth="88dp"
+        android:minHeight="36dp"
+        android:onClick="vol70"
+        android:text="70%"
+        app:layout_constraintBaseline_toBaselineOf="@+id/vol50"
+        app:layout_constraintStart_toEndOf="@+id/vol50" />
+
+    <Button
+        android:id="@+id/poi6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:minWidth="88dp"
+        android:minHeight="36dp"
+        android:onClick="POI6"
+        android:text="Frank"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/poi5"
+        app:layout_constraintTop_toBottomOf="@+id/poi5" />
+
+    <Button
+        android:id="@+id/mute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:minWidth="88dp"
+        android:minHeight="36dp"
+        android:onClick="mute"
+        android:text="Mute"
+        android:visibility="visible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/vol50"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/poi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="15dp"
+        android:minWidth="88dp"
+        android:minHeight="36dp"
+        android:onClick="POI1"
+        android:text="Lisa"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:text="James' audio control"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/vol70"
+        app:layout_constraintTop_toBottomOf="@+id/chargingStation" />
+
+    <Button
+        android:id="@+id/chargingStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="19dp"
+        android:minWidth="88dp"
+        android:minHeight="36dp"
+        android:onClick="chargingStation"
+        android:text="Charging Station"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/poi8"
+        app:layout_constraintTop_toBottomOf="@+id/poi4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Whom would you like to visit?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/poi5"
+        app:layout_constraintStart_toStartOf="@+id/poi5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/poi5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp"
+        android:minWidth="88dp"
+        android:minHeight="36dp"
+        android:onClick="POI5"
+        android:text="Sally"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/poi1"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/poi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="88dp"
+        android:minHeight="36dp"
+        android:onClick="POI3"
+        android:text="Adam"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/poi7"
+        app:layout_constraintStart_toStartOf="@+id/poi2" />
+
+    <Button
+        android:id="@+id/poi4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:minWidth="88dp"
+        android:minHeight="36dp"
+        android:onClick="POI4"
+        android:text="Boris"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/poi3"
+        app:layout_constraintTop_toBottomOf="@+id/poi3" />
+
+    <Button
+        android:id="@+id/poi8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="9dp"
+        android:minWidth="88dp"
+        android:minHeight="36dp"
+        android:onClick="POI8"
+        android:text="Carl"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/chargingStation"
+        app:layout_constraintStart_toStartOf="@+id/poi7" />
+
+    <Button
+        android:id="@+id/poi7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:minWidth="88dp"
+        android:minHeight="36dp"
+        android:onClick="POI7"
+        android:text="Kiran"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/poi6"
+        app:layout_constraintTop_toBottomOf="@+id/poi6" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="100dp"
+        android:text="status"
+        app:layout_constraintStart_toEndOf="@+id/connect"
+        app:layout_constraintTop_toBottomOf="@+id/connect" />
+
+    <EditText
+        android:id="@+id/ipAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:ems="10"
+        android:hint="IP Address"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:minEms="15"
+        app:layout_constraintBaseline_toBaselineOf="@+id/connect"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

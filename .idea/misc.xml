@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.38177083333333334" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.140625" />
+        <entry key="app/src/main/res/layout/adapter_event_row.xml" value="0.17447916666666666" />
+        <entry key="app/src/main/res/layout/bottom_sheet_add_event.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/calender_entry.xml" value="0.2861111111111111" />
+        <entry key="app/src/main/res/layout/card_layout.xml" value="0.17447916666666666" />
+        <entry key="app/src/main/res/layout/custom_spinner_adapter.xml" value="0.32916666666666666" />
+        <entry key="app/src/main/res/layout/drive_around.xml" value="0.18177083333333333" />
+        <entry key="app/src/main/res/layout/listitems_layout.xml" value="0.32916666666666666" />
+        <entry key="app/src/main/res/layout/welcome_page.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
